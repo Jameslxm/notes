@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="viewModel1"
+                  type="com.lixm.notes.databinding.SimpleViewModelSolution"/>
+    </data>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:id="@+id/plain_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel1.name}"
+        />
+        <TextView
+                android:id="@+id/plain_lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel1.lastName}"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{Integer.toString(viewModel1.likes)}"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->viewModel1.onLike()}"/>
+    </LinearLayout>
+</layout>
