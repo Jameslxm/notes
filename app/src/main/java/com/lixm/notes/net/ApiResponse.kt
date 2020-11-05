@@ -1,0 +1,1 @@
+package com.lixm.notes.netclass ApiResponse<T>(    var data: T?,    var errorCode: Int,    var errorMsg: String)

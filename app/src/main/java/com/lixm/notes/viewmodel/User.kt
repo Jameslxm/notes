@@ -1,0 +1,1 @@
+package com.lixm.notes.viewmodelclass User {}

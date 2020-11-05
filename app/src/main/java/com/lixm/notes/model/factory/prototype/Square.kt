@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factory.prototypeimport android.util.Logclass Square : Shape() {    init {        type = "Square"    }    override fun draw() {        Log.d("xxx","Inside Square::draw() method.")    }}

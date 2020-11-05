@@ -1,0 +1,1 @@
+package com.lixm.notes.kotlinfun List<String>.getLongestString2(){    println(this)}

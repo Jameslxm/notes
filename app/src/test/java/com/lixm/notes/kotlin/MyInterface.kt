@@ -1,0 +1,1 @@
+package com.lixm.notes.kotlininterface MyInterface {    val pro : Int    val propertyWithImplementation: String        get() = "foo"    fun foot(){        print(pro)    }    fun bar()    fun foo(){    }}

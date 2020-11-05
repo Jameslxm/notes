@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factory.decoratorclass Circle : Shape {    override fun draw() {        println("Shape: Circle")    }}

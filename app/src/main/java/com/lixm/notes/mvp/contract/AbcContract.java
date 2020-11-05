@@ -1,0 +1,1 @@
+package com.lixm.notes.mvp.contract;/** * Desc * Author xm li * Date :2020/4/19 */public interface AbcContract {}

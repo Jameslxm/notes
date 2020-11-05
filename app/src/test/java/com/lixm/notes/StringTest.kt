@@ -1,0 +1,1 @@
+package com.lixm.notesimport org.junit.Testclass StringTest {    @Test    fun testString(){        var str = null        a(str)    }    fun a(str: String?){        if(str.isNullOrEmpty()){            println("null or empty")        }else{            println("")        }    }}

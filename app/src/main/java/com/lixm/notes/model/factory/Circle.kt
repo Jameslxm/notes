@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factoryclass Circle : Shape {    override fun draw() {        System.out.println("Inside Circle::draw() method.")    }}

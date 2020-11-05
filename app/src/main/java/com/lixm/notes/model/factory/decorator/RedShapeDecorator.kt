@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factory.decoratorclass RedShapeDecorator(decorattedShape: Shape) : ShapeDecorator(decorattedShape) {    override fun draw() {        decoratedShape?.draw()        setRedBorder(decoratedShape)    }    private fun setRedBorder(decoratedShape: Shape?) {        println("Border Color: Red")    }}

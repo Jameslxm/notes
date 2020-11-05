@@ -1,0 +1,1 @@
+package com.lixm.notes;import com.lixm.notes.dragger.CoffeeApp;import com.lixm.notes.dragger.DaggerCoffeeApp_CoffeeShop;import org.junit.Test;public class DraggerTest {    @Test    public void testDragger(){        CoffeeApp.CoffeeShop coffeeShop = DaggerCoffeeApp_CoffeeShop.create();        coffeeShop.maker().brew();    }}

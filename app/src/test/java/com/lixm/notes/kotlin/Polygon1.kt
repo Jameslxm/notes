@@ -1,0 +1,1 @@
+package com.lixm.notes.kotlinopen class Polygon1 {    open fun draw(){}}abstract class Rectangel1 : Polygon1(){    override fun draw() {        super.draw()    }}class B : Rectangel1(){}

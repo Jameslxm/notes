@@ -1,0 +1,1 @@
+package com.lixm.notes.dragger;import javax.inject.Inject;public class CoffeeMaker {//    @Inject//    Heater heater;//    @Inject//    Pump pump;    @Inject CoffeeMaker(){    }    public void brew(){        System.out.println("==>brew");    }}

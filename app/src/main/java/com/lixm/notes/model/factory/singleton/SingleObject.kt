@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factory.singletonclass SingleObjectprivate constructor(){    fun showMessage(){        println("Hello World!")    }    companion object {        var instance = SingleObject()    }}

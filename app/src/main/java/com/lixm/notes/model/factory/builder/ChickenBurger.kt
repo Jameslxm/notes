@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factory.builderclass ChickenBurger: Burger() {    override fun price(): Float {        return 40.0f    }    override fun name(): String {        return "ChickenBurger"    }}

@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factory.prototype abstract class Shape : Cloneable {    var id: String? = null    var type: String? = null    abstract fun draw()      public override fun clone(): Any {        var clone : Any        try {            clone = super.clone()        }catch (e:CloneNotSupportedException){        }        return super.clone()    }}

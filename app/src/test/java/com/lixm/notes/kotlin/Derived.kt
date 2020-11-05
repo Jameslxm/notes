@@ -1,0 +1,1 @@
+package com.lixm.notes.kotlin class Derived:Base(){}

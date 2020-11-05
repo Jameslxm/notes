@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factory.builderinterface Packing {    fun pack(): String}

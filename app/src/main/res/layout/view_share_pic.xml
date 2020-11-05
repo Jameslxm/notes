@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="290dp"
+    android:layout_height="450dp"
+    android:background="@drawable/bg_share_pic"
+    android:orientation="vertical">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="58dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="34dp"
+                android:background="@drawable/bg_logo"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/ic_logo" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="校体通"
+                    android:textColor="#fff"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="82dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/share_pic_title" />
+    </FrameLayout>
+    <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            />
+
+    <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            tools:text="张小涵" />
+
+    <ImageView
+            android:layout_width="204dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_share_power" />
+
+    <TextView
+            android:id="@+id/tvTodayRanking"
+            android:layout_width="160dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_share_pic_duration"
+            android:gravity="center"
+            android:textColor="#616FF2"
+            android:textSize="20dp"
+            tools:text="今日运动35分钟" />
+
+    <TextView
+            android:id="@+id/tvSchoolRanking"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_share_pic_duration"
+            android:gravity="center"
+            android:textColor="#616FF2"
+            android:textSize="14dp"
+            tools:text="全校第20名" />
+
+    <LinearLayout
+            android:layout_width="255dp"
+            android:layout_height="215dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_share_pic_white"
+            android:orientation="vertical"
+            android:padding="9dp">
+
+        <TextView
+                android:id="@+id/tvTotalDuration"
+                android:layout_width="148dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_share_pic_total_duration"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="14dp"
+                tools:text="累计运动 12541分钟" />
+
+        <TextView
+                android:id="@+id/tvBeatRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:textColor="#616FF2"
+                android:textSize="10dp"
+                tools:text="打败全校50%同学" />
+
+        <com.lixm.notes.share.MyPieChart
+                android:id="@+id/pie_chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"/>
+
+
+        <TextView
+                android:id="@+id/tvDeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/shape_circle_ffd874_6"
+                android:drawablePadding="3dp"
+                android:textColor="#FFD058"
+                android:textSize="9dp"
+                tools:text="时长统计截至2019/08/09" />
+    </LinearLayout>
+</LinearLayout>

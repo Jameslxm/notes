@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factory.filterclass Person(name: String,gender: String,maritalStatus: String) {    var name: String? = null    var gender: String? = null    var maritalStatus: String? = null    init {        this.name = name        this.gender = gender        this.maritalStatus = maritalStatus    }}

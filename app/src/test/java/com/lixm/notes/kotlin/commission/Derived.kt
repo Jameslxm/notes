@@ -1,0 +1,1 @@
+package com.lixm.notes.kotlin.commissionclass Derived(var b: Base): Base by b{    override val message: String        get() = "Message of Derived"}

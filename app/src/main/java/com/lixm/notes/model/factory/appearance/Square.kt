@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factory.appearanceclass Square: Shape {    override fun draw() {        print("Square::draw()")    }}

@@ -1,0 +1,1 @@
+package com.lixm.notes.kotlinclass Customer public constructor(name: String) {    val customerKey = name.toUpperCase()    fun writeUpper(){        println(customerKey)    }}

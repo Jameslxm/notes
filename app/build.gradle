@@ -1,61 +1,1 @@
-apply plugin: 'com.android.application'
-
-apply plugin: 'kotlin-android'
-
-apply plugin: 'kotlin-android-extensions'
-
-android {
-    compileSdkVersion 28
-    defaultConfig {
-        applicationId "com.lixm.notes"
-        multiDexEnabled true
-        minSdkVersion 19
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        ndk {
-            //设置支持的SO库架构
-            abiFilters 'armeabi', 'armeabi-v7a', 'x86'
-        }
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-    dataBinding{
-        enabled true
-    }
-}
-
-dependencies {
-    def viewDependencies = rootProject.ext.viewDependencies
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
-    implementation 'androidx.core:core-ktx:1.1.0-alpha05'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
-
-    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
-
-    implementation 'com.github.Andy671:Dachshund-Tab-Layout:v0.3.3'
-
-    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
-
-    implementation 'com.shuyu:GSYVideoPlayer:7.0.1'
-
-    implementation viewDependencies.glide
-    annotationProcessor viewDependencies.glideProcessor
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
-
-}
+apply plugin: 'com.android.application'apply plugin: 'kotlin-android'apply plugin: 'kotlin-android-extensions'apply plugin: 'kotlin-kapt'//apply plugin: 'android-aspectjx'android {    compileSdkVersion 28    defaultConfig {        applicationId "com.lixm.notes"        multiDexEnabled true        minSdkVersion 19        targetSdkVersion 28        versionCode 1        versionName "1.0"        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"        ndk {            //设置支持的SO库架构            abiFilters 'armeabi', 'armeabi-v7a'        }//        sourceSets{//            main{//                res.srcDirs = rootProject.ext.a//            }//        }    }    buildTypes {        release {            minifyEnabled false            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'        }    }    compileOptions {        sourceCompatibility JavaVersion.VERSION_1_8        targetCompatibility JavaVersion.VERSION_1_8    }    kotlinOptions{        jvmTarget = "1.8"    }    dataBinding{        enabled true    }    dexOptions {        javaMaxHeapSize "4g"    }    packagingOptions{        exclude 'META-INF/atomicfu.kotlin_module'    }}repositories {    flatDir {        dirs 'libs'    }}dependencies {    def viewDependencies = rootProject.ext.viewDependencies    implementation fileTree(include: ['*.jar'], dir: 'libs,plugins')    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'    implementation 'androidx.core:core-ktx:1.1.0-alpha05'    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'    testImplementation 'junit:junit:4.12'    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'    implementation 'com.github.Andy671:Dachshund-Tab-Layout:v0.3.3'    implementation 'com.squareup.retrofit2:retrofit:2.6.1'    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'    implementation 'com.squareup.okhttp3:logging-interceptor:4.2.2'    implementation 'com.shuyu:GSYVideoPlayer:7.0.1'    implementation viewDependencies.glide    annotationProcessor viewDependencies.glideProcessor    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'    implementation 'io.reactivex.rxjava3:rxjava:3.0.0-RC0'    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'    implementation 'com.google.code.gson:gson:2.8.5'    implementation files('libs/ECharts-3.0.0.6.jar')    implementation 'androidx.security:security-crypto:1.0.0-alpha02'    implementation 'com.github.lazylibrary:lazylibrary:1.0.2'    implementation 'com.lxm:common-utils:1.0.0'    implementation "androidx.room:room-runtime:$rootProject.roomVersion"    implementation "androidx.room:room-ktx:$rootProject.roomVersion"    kapt "androidx.room:room-compiler:$rootProject.roomVersion"    androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"    // Lifecycle components    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.archLifecycleVersion"    kapt "androidx.lifecycle:lifecycle-compiler:$rootProject.archLifecycleVersion"    androidTestImplementation "androidx.arch.core:core-testing:$rootProject.androidxArchVersion"    // ViewModel Kotlin support    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.archLifecycleVersion"    // Coroutines    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutines"    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutines"    implementation 'com.airbnb:deeplinkdispatch:4.1.0'    kapt 'com.airbnb:deeplinkdispatch-processor:4.1.0'    implementation "androidx.work:work-runtime-ktx:$rootProject.work"    implementation "com.jakewharton.timber:timber:$rootProject.timber"    //    implementation 'me.jessyan:autosize:1.1.2'    api rootProject.ext.dependencies["dagger2"]    kapt rootProject.ext.dependencies["dagger2-compiler"]    api rootProject.ext.dependencies["dagger2-android"]    api rootProject.ext.dependencies["dagger2-android-support"]    kapt rootProject.ext.dependencies["dagger2-android-processor"]    api 'com.squareup:kotlinpoet:1.5.0'    api(name: 'voiceai-release3', ext: 'aar')    //    implementation 'com.github.HarrisonChe:InnerGuideViewLibrary:1.0'    //    implementation 'com.android.support:multidex:1.0.1'}

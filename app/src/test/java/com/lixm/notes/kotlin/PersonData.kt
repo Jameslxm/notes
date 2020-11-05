@@ -1,0 +1,1 @@
+package com.lixm.notes.kotlindata class PersonData(val name: String){    var age: Int = 0}

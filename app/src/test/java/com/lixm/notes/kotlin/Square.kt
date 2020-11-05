@@ -1,0 +1,1 @@
+package com.lixm.notes.kotlinopen class Rectagele{    open fun draw(){        println("Rectagele ")    }}interface Polygon{    fun draw(){        println("Polygon ")    }}class Square() : Rectagele(),Polygon{    override fun draw() {        super<Rectagele>.draw()        super<Polygon>.draw()    }}

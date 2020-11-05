@@ -1,0 +1,1 @@
+package com.lixm.notes.dragger;import dagger.Module;import dagger.Provides;@Module(includes = PumpModule.class)public class DripCoffeeModule {    @Provides Heater provideHeater(){        return new ElectricHeater();    }}

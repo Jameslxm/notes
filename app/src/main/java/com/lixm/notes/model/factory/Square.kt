@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factoryclass Square : Shape {    override fun draw() {        System.out.println("Inside Square::draw() method.")    }}

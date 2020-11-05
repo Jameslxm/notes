@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factoryabstract class AbstractFactory {    abstract fun getColor(color: String): Color?    abstract fun getShape(shape: String): Shape?}

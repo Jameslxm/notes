@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factory.decoratorabstract class ShapeDecorator(decoratedShape: Shape) : Shape{    protected var decoratedShape: Shape? = null    init {        this.decoratedShape = decoratedShape    }    override fun draw(){        decoratedShape?.draw()    }}

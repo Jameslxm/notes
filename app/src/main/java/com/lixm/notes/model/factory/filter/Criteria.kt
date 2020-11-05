@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factory.filterinterface Criteria {    fun meetCriteria(persons: List<Person>?):List<Person>?}

@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factoryclass Rectangle : Shape {    override fun draw() {        System.out.println("Inside Rectangle::draw() method.")    }}

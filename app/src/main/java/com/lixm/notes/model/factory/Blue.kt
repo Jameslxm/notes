@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factoryclass Blue : Color {    override fun fill() {        System.out.println("Inside Blue::fill() method.");    }}

@@ -1,0 +1,1 @@
+package com.lixm.notes.draggerimport android.os.Bundleimport androidx.appcompat.app.AppCompatActivityimport com.lixm.notes.Rclass DraggerActivity: AppCompatActivity(){    override fun onCreate(savedInstanceState: Bundle?) {        super.onCreate(savedInstanceState)        setContentView(R.layout.act_dragger)    }}

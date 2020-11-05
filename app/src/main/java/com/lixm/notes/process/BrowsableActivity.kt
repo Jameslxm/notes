@@ -1,0 +1,1 @@
+package com.lixm.notes.processimport android.os.Bundleimport androidx.appcompat.app.AppCompatActivityimport com.lixm.notes.Rclass BrowsableActivity : AppCompatActivity() {    override fun onCreate(savedInstanceState: Bundle?) {        super.onCreate(savedInstanceState)        setContentView(R.layout.activity_browsalb)    }}

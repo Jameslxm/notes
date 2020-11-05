@@ -1,0 +1,1 @@
+package com.lixm.notes.dragger;public interface Heater {    void on();    void off();    boolean isHot();}

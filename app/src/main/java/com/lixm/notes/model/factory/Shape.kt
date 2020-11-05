@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factoryinterface Shape {    fun draw()}

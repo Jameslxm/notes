@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factory.decoratorclass Rectangle : Shape {    override fun draw() {        println("Shape: Rectangle")    }}

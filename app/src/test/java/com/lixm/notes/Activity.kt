@@ -1,0 +1,1 @@
+package com.lixm.notesimport kotlinx.coroutines.*class Activity : CoroutineScope by CoroutineScope(Dispatchers.Default){    fun destory(){        cancel()    }    fun doSomething(){        repeat(10){i ->            launch {                delay((i+1)*200L)                println("Coroutine $i is done")            }        }    }}

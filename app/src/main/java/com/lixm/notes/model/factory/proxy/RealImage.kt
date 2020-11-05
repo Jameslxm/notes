@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factory.proxyclass RealImage(fileName: String?) : Image {    var fileName: String? = null    init {        this.fileName = fileName        loadFromDisk()    }    private fun loadFromDisk() {        println("Loading$fileName")    }    override fun display() {        println("Displaying$fileName")    }}

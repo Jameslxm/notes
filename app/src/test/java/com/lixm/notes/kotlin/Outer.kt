@@ -1,0 +1,1 @@
+package com.lixm.notes.kotlinopen class Outer {    private  val a = 1    protected open val b = 2    internal val c = 3    val d = 4    protected class Nested{        public val  e: Int = 5    }}class Subclass : Outer(){    override val b: Int        get() = 5}class Unrelated(o:Outer){//    o.a}

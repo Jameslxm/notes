@@ -1,0 +1,1 @@
+package com.lixm.notes.kotlinclass TestSubject{    fun method(){    }}class MyTest {    lateinit var subject: TestSubject    fun setup(){        subject = TestSubject()    }    fun test(){        subject.method()    }}

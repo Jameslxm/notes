@@ -1,0 +1,1 @@
+package com.lixm.notes.dragger;import dagger.Component;public class CoffeeApp {    @Component(modules = DripCoffeeModule.class)    public interface CoffeeShop{        CoffeeMaker maker();    }    public static void main(String[] args) {        CoffeeShop coffeeShop = DaggerCoffeeApp_CoffeeShop.create();        coffeeShop.maker().brew();    }}

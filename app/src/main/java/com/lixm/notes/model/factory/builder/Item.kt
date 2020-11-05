@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factory.builderinterface Item {    fun name(): String    fun packing(): Packing    fun price(): Float}

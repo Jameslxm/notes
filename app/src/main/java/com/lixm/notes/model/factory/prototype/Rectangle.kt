@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factory.prototypeimport android.util.Logclass Rectangle : Shape() {    init {        type = "Rectangle"    }    override fun draw() {        Log.d("xxx","Inside Rectangle::draw() method.")    }}

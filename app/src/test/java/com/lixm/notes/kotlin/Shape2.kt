@@ -1,0 +1,1 @@
+package com.lixm.notes.kotlininterface Shape2 {    val vertexCount: Int}class Rectangel(override val vertexCount: Int = 4): Shape2class Rolygon : Shape2{    override var vertexCount: Int = 10}

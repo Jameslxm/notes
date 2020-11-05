@@ -1,0 +1,1 @@
+package com.lixm.notes.kotlin.commissionclass User(val map: MutableMap<String,Any?>) {    val name: String by map    val age: Int by map}

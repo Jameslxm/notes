@@ -1,6 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
-</resources>
+<?xml version="1.0" encoding="utf-8"?><resources>    <color name="colorPrimary">#008577</color>    <color name="colorPrimaryDark">#00574B</color>    <color name="colorAccent">#D81B60</color>    <!-- 饼图颜色-->    <color name="pie_1">#69c9ff</color>    <color name="pie_2">#FC97AF</color>    <color name="pie_3">#F7C5A0</color>    <color name="pie_4">#F7F494</color>    <color name="pie_5">#87F7CF</color>    <color name="buttonLabel">#d3d3d3</color></resources>

@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factory.bridginginterface DrawAPI {    fun drawCircle(radius: Int, x: Int, y: Int)}

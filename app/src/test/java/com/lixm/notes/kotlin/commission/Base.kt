@@ -1,0 +1,1 @@
+package com.lixm.notes.kotlin.commissioninterface Base {    val message: String    fun print()}

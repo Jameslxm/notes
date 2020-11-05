@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factoryinterface Color {    fun fill()}

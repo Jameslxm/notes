@@ -1,0 +1,1 @@
+package com.lixm.notes.kotlinclass Constructors {    init{        println("Init block")    }    constructor(i:Int){        println("Constructor")    }}

@@ -1,0 +1,1 @@
+package com.lixm.notes.dragger;import dagger.Module;@Modulepublic abstract class PumpModule {    abstract Pump providePump(Thermosiphon pump);}

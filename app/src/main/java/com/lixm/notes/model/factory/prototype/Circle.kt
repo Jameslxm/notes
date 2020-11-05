@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factory.prototypeimport android.util.Logclass Circle: Shape() {    init {        type = "Circle";    }    override fun draw() {        Log.d("xxx","Inside Circle::draw() method.")    }}

@@ -1,0 +1,1 @@
+package com.lixm.notes.dragger;public interface Pump {    void pump();}

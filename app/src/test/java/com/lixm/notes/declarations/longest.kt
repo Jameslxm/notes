@@ -1,0 +1,1 @@
+package com.lixm.notes.declarationsclass longest {}fun List<String>.getLongestString(){}

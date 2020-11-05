@@ -1,0 +1,1 @@
+package com.lixm.notes.kotlinopen class Shape {    open val vertexCount: Int = 0    open fun draw(){}    fun fill(){}}class Circle(): Shape(){    override fun draw() {    }}open class Recangel():Shape(){    override val vertexCount: Int = 4    final override fun draw() {    }}class Trigle() : Recangel(){}

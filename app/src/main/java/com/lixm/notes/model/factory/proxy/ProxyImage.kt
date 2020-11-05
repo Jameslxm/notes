@@ -1,0 +1,1 @@
+package com.lixm.notes.model.factory.proxyclass ProxyImage(fileName: String): Image {    var fileName: String? = null    var realImage: RealImage? = null    init {        this.fileName = fileName    }    override fun display() {        if(realImage == null){            realImage = RealImage(fileName)        }        realImage?.display()    }}

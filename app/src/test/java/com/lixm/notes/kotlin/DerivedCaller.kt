@@ -1,0 +1,1 @@
+package com.lixm.notes.kotlinclass DerivedCaller: BaseCaller() {    override fun Base.printFunctionInfo() {        println("Base extension function in DerivedCaller")    }    override fun Derived.printFunctionInfo() {        println("Derived extension function in DerivedCaller")    }}
