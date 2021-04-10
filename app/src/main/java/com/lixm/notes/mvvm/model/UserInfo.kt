@@ -1,0 +1,1 @@
+package com.lixm.notes.mvvm.modelimport androidx.databinding.ObservableField/** * Desc * Author xm li * Date :2021/3/12 */class UserInfo {    var name: ObservableField<String> = ObservableField()    var pwd: ObservableField<String> = ObservableField()}

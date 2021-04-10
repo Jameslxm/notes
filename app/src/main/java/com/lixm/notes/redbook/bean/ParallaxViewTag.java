@@ -1,0 +1,1 @@
+package com.lixm.notes.redbook.bean;/** * Desc * Author xm li * Date :2021/2/23 */public class ParallaxViewTag {    //绑定每一个view对应的是哪一个下标的    public int index;    //x轴进入的速度    public float xIn;    public float xOut;    public float yIn;    public float yOut;    public float alphaIn;    public float alphaOut;}

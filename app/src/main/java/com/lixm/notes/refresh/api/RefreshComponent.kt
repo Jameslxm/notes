@@ -1,0 +1,1 @@
+package com.lixm.notes.refresh.apiimport android.view.Viewimport androidx.annotation.NonNull/** * Desc * Author xm li * Date :2020/12/18 */interface RefreshComponent {    @NonNull    fun getView(): View?}
